@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Interactive Web Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1> Web Animations with CSS & JavaScript </h1>
+
+  <!-- CSS Transitions -->
+  <section>
+    <h2> CSS Transitions and Animations</h2>
+    <p>This part shows more of hover box, clock down below and it will pop up</p>
+    <button class="animated-btn">Hover Me!</button>
+    <div class="pulse-box"></div>
+  </section>
+
+  <!-- FUNCTIONS -->
+  <section>
+    <h2>Part 2: JavaScript Functions (Scope, Parameters and Return)</h2>
+    <p>Here is a mini calculator below:</p>
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
+    <button onclick="showResult('sum')">Add</button>
+    <button onclick="showResult('multiply')">Multiply</button>
+    <button onclick="showResult('subtract')">Subtract</button>
+    <button onclick="showResult('divide')">Divide</button>
+    <p id="calc-result"></p>
+  </section>
+
+  <!-- CSS and JS -->
+  <section>
+    <h2>Part 3: CSS + JavaScript Together</h2>
+    <p>Click below to trigger different animations:</p>
+    <button onclick="flipCard()">Flip the Card</button>
+    <button onclick="toggleModal()">Toggle Modal</button>
+    <button onclick="toggleLoader()">Start/Stop Loader</button>
+
+
+    <!-- Card with flip animation -->
+    <div class="card" id="myCard">
+      <div class="card-inner">
+        <div class="card-front">FRONT</div>
+        <div class="card-back">BACK</div>
+      </div>
+    </div>
+
+    <!-- Modal popup -->
+    <div class="modal" id="myModal">
+      <p>This is a sliding modal</p>
+    </div>
+
+    <!-- Loading spinner -->
+    <div class="loader" id="myLoader">
+        <div class="spinner"></div>
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
